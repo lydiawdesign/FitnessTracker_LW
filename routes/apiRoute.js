@@ -1,6 +1,5 @@
 const Workout = require("../models/workoutModel.js");
 const router = require('express').Router();
-// const mongoose = require("mongoose");
 
 // create a new workout
 router.post("/", ({body}, res) => {
