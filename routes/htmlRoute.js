@@ -1,10 +1,10 @@
 const router = require("express").Router();
-// const Transaction = require("../models/workoutModel");
+const Workout = require("../models/workoutModel.js");
 
 //get the homepage
 router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.html'));
-})
+});
 
 //get the exercise page
 router.get("/exercise", function(req, res) {

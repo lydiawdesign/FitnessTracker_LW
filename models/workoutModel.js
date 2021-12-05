@@ -22,7 +22,7 @@ const workoutSchema = new Schema({
             type: Number,
             required: 'You must enter a duration (in minutes) to proceed',
         },
-        weight: {
+        weights: {
             type: Number,
         },
         distance: {
@@ -38,6 +38,6 @@ const workoutSchema = new Schema({
     ]
   });
   
-  const Workout = mongoose.model("Workout", workoutSchema);
+  const Workout = mongoose.model("workout", workoutSchema);
   
   module.exports = Workout;
