@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Workout = require("../models/workoutModel.js");
+const path = require("path");
 
 //get the homepage
 router.get('/', function(req, res) {

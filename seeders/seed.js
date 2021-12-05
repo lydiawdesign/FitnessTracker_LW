@@ -125,6 +125,9 @@ const workoutSeed = [
   },
 ];
 
+
+// had an error with this so I commented out - says "cannot read property deleteMany of undefined" 
+
 // db.Workout.deleteMany({})
 //   .then(() => db.Workout.collection.insertMany(workoutSeed))
 //   .then((data) => {

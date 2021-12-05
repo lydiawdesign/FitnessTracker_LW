@@ -1,31 +1,40 @@
 const Workout = require("../models/workoutModel.js");
 const router = require('express').Router();
 
+// get previous workouts
+// router.get("/api/workouts", (req, res) => {
+//   db.Workout.find({})
+//   .then(Workout => {
+//     Workout.forEach(Workout => {
+//       const total = 0;
+//       Workout.exercises.forEach (e => {total += e.duration;});
+//       Workout.totalDuration = total;
+//     })
+//     res.json(Workout);
+//   })
+//   .catch(err => {
+//      res.status(400).json(err);
+//   });
+// });
+
 // create a new workout
 router.post("/", ({body}, res) => {
-    Workout.create(body)
-      .then(workout => {
-        res.json(workout);
-      })
-      .catch(err => {
-        res.status(400).json(err);
-      });
+  db.Workout.create(body)
+    .then(workout => {
+      res.json(workout);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
   });
-  
-  // router.post("/api/transaction/bulk", ({ body }, res) => {
-  //   Transaction.insertMany(body)
-  //     .then(dbTransaction => {
-  //       res.json(dbTransaction);
-  //     })
-  //     .catch(err => {
-  //       res.status(400).json(err);
-  //     });
-  // });
-  
-  router.get("/", (req, res) => {
-    Workout.find({})
-      .then(workout => {
-        res.json(workout);
+
+// add exercises
+
+// get workout summary 
+  router.get("/api/workouts/range", (req, res) => {
+    db.Workout.find({})
+      .then(Workout => {
+        res.json(Workout);
       })
       .catch(err => {
         res.status(400).json(err);
