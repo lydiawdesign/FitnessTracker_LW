@@ -125,16 +125,13 @@ const workoutSeed = [
   },
 ];
 
-
-// had an error with this so I commented out - says "cannot read property deleteMany of undefined" 
-
-// db.Workout.deleteMany({})
-//   .then(() => db.Workout.collection.insertMany(workoutSeed))
-//   .then((data) => {
-//     console.log(data.result.n + ' records inserted!');
-//     process.exit(0);
-//   })
-//   .catch((err) => {
-//     console.error(err);
-//     process.exit(1);
-//   });
+db.Workout.deleteMany({})
+  .then(() => db.Workout.collection.insertMany(workoutSeed))
+  .then((data) => {
+    console.log(data.result.n + ' records inserted!');
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
