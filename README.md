@@ -1,7 +1,7 @@
 # Nosql Homework: Workout Tracker Lydia Williamson
 
 ## Links
-GitHub Repo: https://github.com/lydiawdesign/FitnessTracker_LW
+GitHub Repo: https://github.com/lydiawdesign/FitnessTracker_LW <br>
 Heroku: https://thawing-reaches-88646.herokuapp.com/ 
 
 ## Description
@@ -10,7 +10,7 @@ An application that allows users to track their workouts/exercises. A user is ab
 
 ## User Story
 
-* As a user...
+* As a user... <br>
  I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
 ## Installation
@@ -20,6 +20,8 @@ Heroku - no installation needed.
 Repo- must download the entire repo to local computer. From there, install npm and seed the data. 
 
 ## Screenshots
+![image](https://user-images.githubusercontent.com/87274229/144764134-e33f90a7-e769-40c5-8789-300ff61af9cc.png)
+
 
 ## Technologies used
 
