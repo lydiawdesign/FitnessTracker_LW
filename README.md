@@ -2,7 +2,7 @@
 
 ## Links
 GitHub Repo: https://github.com/lydiawdesign/FitnessTracker_LW
-Heroku:
+Heroku: https://thawing-reaches-88646.herokuapp.com/ 
 
 ## Description
 
