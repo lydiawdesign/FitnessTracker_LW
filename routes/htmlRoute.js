@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Transaction = require("../models/workoutModel");
+// const Transaction = require("../models/workoutModel");
 
 //get the homepage
 router.get('/', function(req, res) {
